@@ -142,9 +142,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         behavior: 'smooth'
                     });
                 }
-            } else if (buttonText.includes('Check Your Eligibility Now')) {
-                // Show eligibility form or scroll to contact
-                showEligibilityForm();
             } else if (buttonText.includes('Contact Us Today')) {
                 // Scroll to contact section
                 const contactSection = document.querySelector('#contact');
@@ -570,7 +567,40 @@ document.addEventListener('DOMContentLoaded', function() {
             'Privacy Policy': 'Privacy Policy',
             'Terms of Service': 'Terms of Service',
             'Follow Us': 'Follow Us',
-            'All rights reserved.': 'All rights reserved.'
+            'All rights reserved.': 'All rights reserved.',
+            
+            // Modal Form
+            'Start Your Journey<br>Apply Today': 'Start Your Journey<br>Apply Today',
+            'Fill out this quick application so we can better understand your situation and guide you toward renting or buying a home.': 'Fill out this quick application so we can better understand your situation and guide you toward renting or buying a home.',
+            'Full Name': 'Full Name',
+            'Phone Number': 'Phone Number',
+            'Email Address': 'Email Address',
+            'Current Address (optional)': 'Current Address (optional)',
+            'Are you looking to:': 'Are you looking to:',
+            'Buy a Home': 'Buy a Home',
+            'Rent a Home': 'Rent a Home',
+            'Not Sure Yet': 'Not Sure Yet',
+            'Estimated Credit Score Range': 'Estimated Credit Score Range',
+            'Below 580': 'Below 580',
+            '580-619': '580-619',
+            '620-659': '620-659',
+            '660-699': '660-699',
+            '700-739': '700-739',
+            '740-779': '740-779',
+            '780+': '780+',
+            'Employment Status': 'Employment Status',
+            'Employed Full-Time': 'Employed Full-Time',
+            'Employed Part-Time': 'Employed Part-Time',
+            'Self-Employed': 'Self-Employed',
+            'Unemployed': 'Unemployed',
+            'Retired': 'Retired',
+            'Student': 'Student',
+            'Do you currently have a budget for down payment or deposit?': 'Do you currently have a budget for down payment or deposit?',
+            'Yes': 'Yes',
+            'No': 'No',
+            'Message / Notes': 'Message / Notes',
+            'Tell us more about your situation...': 'Tell us more about your situation...',
+            'Submit': 'Submit'
         },
         es: {
             // Header
@@ -654,7 +684,40 @@ document.addEventListener('DOMContentLoaded', function() {
             'Privacy Policy': 'Política de Privacidad',
             'Terms of Service': 'Términos de Servicio',
             'Follow Us': 'Síguenos',
-            'All rights reserved.': 'Todos los derechos reservados.'
+            'All rights reserved.': 'Todos los derechos reservados.',
+            
+            // Modal Form
+            'Start Your Journey<br>Apply Today': 'Comienza tu Viaje<br>Aplica Hoy',
+            'Fill out this quick application so we can better understand your situation and guide you toward renting or buying a home.': 'Completa esta aplicación rápida para que podamos entender mejor tu situación y guiarte hacia el alquiler o compra de una casa.',
+            'Full Name': 'Nombre Completo',
+            'Phone Number': 'Número de Teléfono',
+            'Email Address': 'Dirección de Correo',
+            'Current Address (optional)': 'Dirección Actual (opcional)',
+            'Are you looking to:': '¿Estás buscando:',
+            'Buy a Home': 'Comprar una Casa',
+            'Rent a Home': 'Alquilar una Casa',
+            'Not Sure Yet': 'No Estoy Seguro Aún',
+            'Estimated Credit Score Range': 'Rango Estimado de Puntuación Crediticia',
+            'Below 580': 'Menos de 580',
+            '580-619': '580-619',
+            '620-659': '620-659',
+            '660-699': '660-699',
+            '700-739': '700-739',
+            '740-779': '740-779',
+            '780+': '780+',
+            'Employment Status': 'Estado de Empleo',
+            'Employed Full-Time': 'Empleado Tiempo Completo',
+            'Employed Part-Time': 'Empleado Tiempo Parcial',
+            'Self-Employed': 'Trabajador Independiente',
+            'Unemployed': 'Desempleado',
+            'Retired': 'Jubilado',
+            'Student': 'Estudiante',
+            'Do you currently have a budget for down payment or deposit?': '¿Tienes actualmente un presupuesto para el pago inicial o depósito?',
+            'Yes': 'Sí',
+            'No': 'No',
+            'Message / Notes': 'Mensaje / Notas',
+            'Tell us more about your situation...': 'Cuéntanos más sobre tu situación...',
+            'Submit': 'Enviar'
         }
     };
     
@@ -663,6 +726,9 @@ document.addEventListener('DOMContentLoaded', function() {
         elements.forEach(element => {
             if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
                 element.placeholder = translations[lang][element.getAttribute('data-en')] || element.placeholder;
+            } else if (element.classList.contains('modal-title')) {
+                // Special handling for modal title with HTML content
+                element.innerHTML = element.getAttribute(`data-${lang}`);
             } else {
                 element.textContent = translations[lang][element.getAttribute('data-en')] || element.textContent;
             }
@@ -700,6 +766,82 @@ document.addEventListener('DOMContentLoaded', function() {
             spainFlag.style.display = 'block';
             translatePage('es');
         }
+    }
+    
+    // Modal Functionality
+    const modal = document.getElementById('applicationModal');
+    const heroButton = document.querySelector('.hero .btn-primary');
+    
+    // Open modal when hero button is clicked
+    if (heroButton && modal) {
+        heroButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            modal.style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        });
+    }
+    
+    // Close modal when clicking outside of it
+    if (modal) {
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto'; // Restore scrolling
+            }
+        });
+    }
+    
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && modal && modal.style.display === 'block') {
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore scrolling
+        }
+    });
+    
+    // Form validation and submit button functionality
+    const applicationForm = document.getElementById('applicationForm');
+    const submitBtn = document.getElementById('submitBtn');
+    
+    // Add click handler for submit button
+    if (submitBtn && applicationForm) {
+        submitBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Basic form validation
+            const requiredFields = applicationForm.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    isValid = false;
+                    field.style.borderColor = '#dc2626';
+                } else {
+                    field.style.borderColor = '#e5e7eb';
+                }
+            });
+            
+            if (isValid) {
+                // Form is valid - submit logic will be added later
+                console.log('Form submitted successfully!');
+                alert('Thank you! Your application has been submitted.');
+                
+                // Close modal after successful submission
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            } else {
+                alert('Please fill in all required fields.');
+            }
+        });
+    }
+    
+    // Form submission handling (placeholder for now)
+    if (applicationForm) {
+        applicationForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            console.log('Form submission - to be implemented');
+            // Form submission logic will be added later
+        });
     }
     
     // Initialize any additional functionality

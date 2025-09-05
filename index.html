@@ -110,7 +110,7 @@
         <div class="container">
             <div class="cta-content">
                 <h3 data-en="Find out if you qualify to buy or rent today—your dream home is closer than you think." data-es="Descubre si calificas para comprar o alquilar hoy—tu casa soñada está más cerca de lo que piensas.">Find out if you qualify to buy or rent today—your dream home is closer than you think.</h3>
-                <button class="btn btn-primary btn-large" data-en="👉 Check Your Eligibility Now" data-es="👉 Verifica tu Elegibilidad Ahora">👉 Check Your Eligibility Now</button>
+                <button type="button" class="btn btn-primary btn-large" data-en="👉 Check Your Eligibility Now" data-es="👉 Verifica tu Elegibilidad Ahora">👉 Check Your Eligibility Now</button>
             </div>
         </div>
     </section>
@@ -217,7 +217,7 @@
         <div class="container">
             <div class="cta-content">
                 <h3 data-en="Whether you're buying or renting, DestinationBuyRent.com is your trusted partner." data-es="Ya sea que estés comprando o alquilando, DestinationBuyRent.com es tu socio de confianza.">Whether you're buying or renting, DestinationBuyRent.com is your trusted partner.</h3>
-                <button class="btn btn-primary btn-large" data-en="👉 Contact Us Today" data-es="👉 Contáctanos Hoy">👉 Contact Us Today</button>
+                <a href="tel:3057098085" class="btn btn-primary btn-large" data-en="👉 Contact Us Today" data-es="👉 Contáctanos Hoy">👉 Contact Us Today</a>
             </div>
         </div>
     </section>
@@ -309,6 +309,104 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal Form -->
+    <div id="applicationModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2 class="modal-title" data-en="Start Your Journey<br>Apply Today" data-es="Comienza tu Viaje<br>Aplica Hoy">Start Your Journey<br>Apply Today</h2>
+                <p class="modal-description" data-en="Fill out this quick application so we can better understand your situation and guide you toward renting or buying a home." data-es="Completa esta aplicación rápida para que podamos entender mejor tu situación y guiarte hacia el alquiler o compra de una casa.">Fill out this quick application so we can better understand your situation and guide you toward renting or buying a home.</p>
+                
+                <form id="applicationForm" class="application-form">
+                    <div class="form-group">
+                        <label for="fullName" data-en="Full Name" data-es="Nombre Completo">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phoneNumber" data-en="Phone Number" data-es="Número de Teléfono">Phone Number</label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="emailAddress" data-en="Email Address" data-es="Dirección de Correo">Email Address</label>
+                        <input type="email" id="emailAddress" name="emailAddress" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="currentAddress" data-en="Current Address (optional)" data-es="Dirección Actual (opcional)">Current Address (optional)</label>
+                        <input type="text" id="currentAddress" name="currentAddress">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label data-en="Are you looking to:" data-es="¿Estás buscando:">Are you looking to:</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="lookingFor" value="buy" checked>
+                                <span class="radio-text" data-en="Buy a Home" data-es="Comprar una Casa">Buy a Home</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="lookingFor" value="rent">
+                                <span class="radio-text" data-en="Rent a Home" data-es="Alquilar una Casa">Rent a Home</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="lookingFor" value="not-sure">
+                                <span class="radio-text" data-en="Not Sure Yet" data-es="No Estoy Seguro Aún">Not Sure Yet</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="creditScore" data-en="Estimated Credit Score Range" data-es="Rango Estimado de Puntuación Crediticia">Estimated Credit Score Range</label>
+                        <select id="creditScore" name="creditScore" required>
+                            <option value="below-580" data-en="Below 580" data-es="Menos de 580">Below 580</option>
+                            <option value="580-619" data-en="580-619" data-es="580-619">580-619</option>
+                            <option value="620-659" data-en="620-659" data-es="620-659">620-659</option>
+                            <option value="660-699" data-en="660-699" data-es="660-699">660-699</option>
+                            <option value="700-739" data-en="700-739" data-es="700-739">700-739</option>
+                            <option value="740-779" data-en="740-779" data-es="740-779">740-779</option>
+                            <option value="780-plus" data-en="780+" data-es="780+">780+</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="employmentStatus" data-en="Employment Status" data-es="Estado de Empleo">Employment Status</label>
+                        <select id="employmentStatus" name="employmentStatus" required>
+                            <option value="employed-full" data-en="Employed Full-Time" data-es="Empleado Tiempo Completo">Employed Full-Time</option>
+                            <option value="employed-part" data-en="Employed Part-Time" data-es="Empleado Tiempo Parcial">Employed Part-Time</option>
+                            <option value="self-employed" data-en="Self-Employed" data-es="Trabajador Independiente">Self-Employed</option>
+                            <option value="unemployed" data-en="Unemployed" data-es="Desempleado">Unemployed</option>
+                            <option value="retired" data-en="Retired" data-es="Jubilado">Retired</option>
+                            <option value="student" data-en="Student" data-es="Estudiante">Student</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label data-en="Do you currently have a budget for down payment or deposit?" data-es="¿Tienes actualmente un presupuesto para el pago inicial o depósito?">Do you currently have a budget for down payment or deposit?</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="budget" value="yes">
+                                <span class="radio-text" data-en="Yes" data-es="Sí">Yes</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="budget" value="no">
+                                <span class="radio-text" data-en="No" data-es="No">No</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message" data-en="Message / Notes" data-es="Mensaje / Notas">Message / Notes</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Tell us more about your situation..." data-en="Tell us more about your situation..." data-es="Cuéntanos más sobre tu situación..."></textarea>
+                    </div>
+                </form>
+            </div>
+            
+            <div class="modal-footer">
+                <button class="submit-btn" id="submitBtn" data-en="Submit" data-es="Enviar">Submit</button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
