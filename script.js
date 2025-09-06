@@ -142,6 +142,13 @@ document.addEventListener('DOMContentLoaded', function() {
                         behavior: 'smooth'
                     });
                 }
+            } else if (buttonText.includes('Check Your Eligibility Now') || buttonText.includes('Verifica tu Elegibilidad Ahora')) {
+                // Open the same application modal as hero button
+                const applicationModal = document.getElementById('applicationModal');
+                if (applicationModal) {
+                    applicationModal.style.display = 'block';
+                    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+                }
             } else if (buttonText.includes('Contact Us Today')) {
                 // Scroll to contact section
                 const contactSection = document.querySelector('#contact');
@@ -822,27 +829,15 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             
             if (isValid) {
-                // Form is valid - submit logic will be added later
-                console.log('Form submitted successfully!');
-                alert('Thank you! Your application has been submitted.');
-                
-                // Close modal after successful submission
-                modal.style.display = 'none';
-                document.body.style.overflow = 'auto';
+                // Submit form to Netlify
+                applicationForm.submit();
             } else {
                 alert('Please fill in all required fields.');
             }
         });
     }
     
-    // Form submission handling (placeholder for now)
-    if (applicationForm) {
-        applicationForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            console.log('Form submission - to be implemented');
-            // Form submission logic will be added later
-        });
-    }
+    // Form submission handled by Netlify
     
     // Initialize any additional functionality
     console.log('DestinationBuyRent.com website initialized successfully!');

@@ -372,8 +372,11 @@ p {
 .why-choose-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    gap: 2rem;
     align-items: start;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .advantages h3,
@@ -394,7 +397,7 @@ p {
 }
 
 .advantages-list i {
-    color: #28a745;
+    color: #dc2626;
     margin-right: 1rem;
     font-size: 1.2rem;
 }

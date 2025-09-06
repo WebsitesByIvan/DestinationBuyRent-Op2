@@ -126,10 +126,10 @@
                 <div class="advantages">
                     <h3 data-en="Key Advantages" data-es="Ventajas Clave">Key Advantages</h3>
                     <ul class="advantages-list">
-                        <li><i class="fas fa-check"></i> <span data-en="Fast preparation and processing" data-es="Preparación y procesamiento rápido">Fast preparation and processing</span></li>
-                        <li><i class="fas fa-check"></i> <span data-en="Step-by-step clarity throughout the process" data-es="Claridad paso a paso durante todo el proceso">Step-by-step clarity throughout the process</span></li>
-                        <li><i class="fas fa-check"></i> <span data-en="Personalized support and guidance" data-es="Apoyo y orientación personalizada">Personalized support and guidance</span></li>
-                        <li><i class="fas fa-check"></i> <span data-en="Easy-to-follow checklists" data-es="Listas de verificación fáciles de seguir">Easy-to-follow checklists</span></li>
+                        <li><i class="fas fa-bolt"></i> <span data-en="Fast preparation and processing" data-es="Preparación y procesamiento rápido">Fast preparation and processing</span></li>
+                        <li><i class="fas fa-route"></i> <span data-en="Step-by-step clarity throughout the process" data-es="Claridad paso a paso durante todo el proceso">Step-by-step clarity throughout the process</span></li>
+                        <li><i class="fas fa-user-friends"></i> <span data-en="Personalized support and guidance" data-es="Apoyo y orientación personalizada">Personalized support and guidance</span></li>
+                        <li><i class="fas fa-clipboard-list"></i> <span data-en="Easy-to-follow checklists" data-es="Listas de verificación fáciles de seguir">Easy-to-follow checklists</span></li>
                     </ul>
                 </div>
                 <div class="trust-security">
@@ -151,13 +151,6 @@
                             <i class="fas fa-users"></i>
                             <span data-en="Trusted by thousands of first-time buyers & investors in South Florida" data-es="Confiado por miles de compradores primerizos e inversores en el Sur de Florida">Trusted by thousands of first-time buyers & investors in South Florida</span>
                         </div>
-                    </div>
-                    <div class="badges">
-                        <div class="badge" data-en="Equal Housing Opportunity" data-es="Igualdad de Oportunidad de Vivienda">Equal Housing Opportunity</div>
-                        <div class="badge" data-en="FHA" data-es="FHA">FHA</div>
-                        <div class="badge" data-en="NMLS" data-es="NMLS">NMLS</div>
-                        <div class="badge" data-en="USDA" data-es="USDA">USDA</div>
-                        <div class="badge" data-en="VA" data-es="VA">VA</div>
                     </div>
                 </div>
             </div>
@@ -305,7 +298,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 DestinationBuyRent.com. <span data-en="All rights reserved." data-es="Todos los derechos reservados.">All rights reserved.</span></p>
+                <p>&copy; 2025 DestinationBuyRent.com. <span data-en="All rights reserved." data-es="Todos los derechos reservados.">All rights reserved.</span></p>
             </div>
         </div>
     </footer>
@@ -317,7 +310,13 @@
                 <h2 class="modal-title" data-en="Start Your Journey<br>Apply Today" data-es="Comienza tu Viaje<br>Aplica Hoy">Start Your Journey<br>Apply Today</h2>
                 <p class="modal-description" data-en="Fill out this quick application so we can better understand your situation and guide you toward renting or buying a home." data-es="Completa esta aplicación rápida para que podamos entender mejor tu situación y guiarte hacia el alquiler o compra de una casa.">Fill out this quick application so we can better understand your situation and guide you toward renting or buying a home.</p>
                 
-                <form id="applicationForm" class="application-form">
+                <form id="applicationForm" class="application-form" name="application" netlify netlify-honeypot="bot-field">
+                    <!-- Hidden fields for Netlify -->
+                    <div style="display: none;">
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                        <input type="hidden" name="subject" value="New Customer! - Application Form Submission" />
+                    </div>
+                    
                     <div class="form-group">
                         <label for="fullName" data-en="Full Name" data-es="Nombre Completo">Full Name</label>
                         <input type="text" id="fullName" name="fullName" required>
