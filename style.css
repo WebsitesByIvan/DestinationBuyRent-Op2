@@ -671,7 +671,7 @@ p {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .container {
         padding: 0 15px;
     }
@@ -716,11 +716,20 @@ p {
     }
     
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 3rem;
+        margin-top: 2rem;
     }
     
     .hero-subtitle {
         font-size: 1.1rem;
+    }
+    
+    .hero::before {
+        background: rgba(255, 255, 255, 0.6);
+    }
+    
+    .footer {
+        padding-left: 2rem;
     }
     
     .why-choose-content {
@@ -750,11 +759,29 @@ p {
 
 @media (max-width: 480px) {
     .hero-title {
-        font-size: 2rem;
+        font-size: 2.5rem;
+        margin-top: 2.5rem;
     }
     
     .hero-subtitle {
         font-size: 1rem;
+    }
+    
+    .hero-carousel img {
+        object-position: 75% center;
+        transform: scale(1.0);
+    }
+    
+    .hero::before {
+        background: rgba(255, 255, 255, 0.5);
+    }
+    
+    .cta-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .why-choose-us {
+        padding: 40px 0;
     }
     
     .btn-large {
@@ -995,7 +1022,7 @@ p {
 }
 
 /* Mobile Responsive */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .modal-content {
         margin: 5% auto;
         width: 95%;
