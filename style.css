@@ -99,7 +99,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 0 0 0;
+    padding: 0 ;
 }
 
 .logo h1 {
@@ -110,7 +110,7 @@ p {
 }
 
 .logo-image {
-    height: 85px;
+    height: 75px;
     width: auto;
     object-fit: contain;
     border-radius: 8px;
@@ -616,7 +616,7 @@ p {
 }
 
 .footer-logo-image {
-    height: 97px;
+    height: 85px;
     width: auto;
     object-fit: contain;
     border-radius: 10px;
@@ -788,6 +788,14 @@ p {
     
     .hero::before {
         background: rgba(255, 255, 255, 0.5);
+    }
+    
+    .logo-image {
+        height: 60px;
+    }
+    
+    .footer-logo-image {
+        height: 70px;
     }
     
     .cta-content h3 {
