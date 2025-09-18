@@ -99,7 +99,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 0.5rem 0 0 0;
 }
 
 .logo h1 {
@@ -107,6 +107,13 @@ p {
     color: #dc2626;
     margin: 0;
     font-weight: 700;
+}
+
+.logo-image {
+    height: 85px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 .nav-list {
@@ -606,6 +613,13 @@ p {
     font-size: 2rem;
     font-weight: 700;
     margin: 0;
+}
+
+.footer-logo-image {
+    height: 97px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 10px;
 }
 
 .contact-info p {
