@@ -533,9 +533,9 @@ document.addEventListener('DOMContentLoaded', function() {
             'Personalized support and guidance': 'Personalized support and guidance',
             'Easy-to-follow checklists': 'Easy-to-follow checklists',
             'Trust & Security': 'Trust & Security',
-            'Officially Licensed Loan Officer (NMLS #2597615) - (#371526)': 'Officially Licensed Loan Officer (NMLS #2597615) - (#371526)',
-            'Recognized by FHA, Fannie Mae, Freddie Mac, USDA, VA and Non-QM programs': 'Recognized by FHA, Fannie Mae, Freddie Mac, USDA, VA and Non-QM programs',
-            'Member of national and local mortgage associations': 'Member of national and local mortgage associations',
+            'Jose L. Figueroa, NMLS #371526, Licensed Mortgage Loan Originator in Florida': 'Jose L. Figueroa, NMLS #371526, Licensed Mortgage Loan Originator in Florida',
+            'FHA, Fannie Mae, Freddie Mac, VA, USDA, Non-Conforming programs': 'FHA, Fannie Mae, Freddie Mac, VA, USDA, Non-Conforming programs',
+            'Member of national and local mortgage and real estate associations': 'Member of national and local mortgage and real estate associations',
             'Trusted by thousands of first-time buyers & investors in South Florida': 'Trusted by thousands of first-time buyers & investors in South Florida',
             'Equal Housing Opportunity': 'Equal Housing Opportunity',
             'FHA': 'FHA',
@@ -650,9 +650,9 @@ document.addEventListener('DOMContentLoaded', function() {
             'Personalized support and guidance': 'Apoyo y orientación personalizada',
             'Easy-to-follow checklists': 'Listas de verificación fáciles de seguir',
             'Trust & Security': 'Confianza y Seguridad',
-            'Officially Licensed Loan Officer (NMLS #2597615) - (#371526)': 'Oficial de Préstamos con Licencia Oficial (NMLS #2597615) - (#371526)',
-            'Recognized by FHA, Fannie Mae, Freddie Mac, USDA, VA and Non-QM programs': 'Reconocido por programas FHA, Fannie Mae, Freddie Mac, USDA, VA y Non-QM',
-            'Member of national and local mortgage associations': 'Miembro de asociaciones hipotecarias nacionales y locales',
+            'Jose L. Figueroa, NMLS #371526, Licensed Mortgage Loan Originator in Florida': 'Jose L. Figueroa, NMLS #371526, Agente hipotecario con licencia en Florida',
+            'FHA, Fannie Mae, Freddie Mac, VA, USDA, Non-Conforming programs': 'FHA, Fannie Mae, Freddie Mac, VA, USDA, Préstamos no conformes',
+            'Member of national and local mortgage and real estate associations': 'Miembro de asociaciones hipotecarias y de bienes raíces nacionales y locales',
             'Trusted by thousands of first-time buyers & investors in South Florida': 'Confiado por miles de compradores primerizos e inversores en el Sur de Florida',
             'Equal Housing Opportunity': 'Igualdad de Oportunidad de Vivienda',
             'FHA': 'FHA',
@@ -745,13 +745,13 @@ document.addEventListener('DOMContentLoaded', function() {
     function toggleLanguage() {
         if (currentLang === 'en') {
             currentLang = 'es';
-            ukFlag.style.display = 'none';
-            spainFlag.style.display = 'block';
+            ukFlag.style.display = 'block';  // Show UK flag when in Spanish (to switch to English)
+            spainFlag.style.display = 'none';
             translatePage('es');
         } else {
             currentLang = 'en';
-            ukFlag.style.display = 'block';
-            spainFlag.style.display = 'none';
+            ukFlag.style.display = 'none';
+            spainFlag.style.display = 'block';  // Show Spain flag when in English (to switch to Spanish)
             translatePage('en');
         }
         
@@ -769,10 +769,14 @@ document.addEventListener('DOMContentLoaded', function() {
     if (savedLang && savedLang !== 'en') {
         currentLang = savedLang;
         if (currentLang === 'es') {
-            ukFlag.style.display = 'none';
-            spainFlag.style.display = 'block';
+            ukFlag.style.display = 'block';  // Show UK flag when in Spanish (to switch to English)
+            spainFlag.style.display = 'none';
             translatePage('es');
         }
+    } else {
+        // Default to English, show Spain flag (to switch to Spanish)
+        ukFlag.style.display = 'none';
+        spainFlag.style.display = 'block';
     }
     
     // Modal Functionality
