@@ -29,6 +29,10 @@ body {
     padding: 0 20px;
 }
 
+.header .container {
+    padding: 0 20px;
+}
+
 /* Consistent section spacing */
 section {
     padding: 80px 0;
@@ -104,7 +108,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 ;
+    padding: 0;
 }
 
 .logo h1 {
@@ -115,7 +119,7 @@ p {
 }
 
 .logo-image {
-    height: 75px;
+    height: 90px;
     width: auto;
     object-fit: contain;
     border-radius: 8px;
@@ -657,7 +661,9 @@ p {
 
 .footer-logo {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .footer-logo-text {
@@ -672,6 +678,15 @@ p {
     width: auto;
     object-fit: contain;
     border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.footer-slogan {
+    color: #f1f5f9;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+    font-style: italic;
 }
 
 .contact-info p {

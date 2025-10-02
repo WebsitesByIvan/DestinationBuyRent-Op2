@@ -520,7 +520,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'FHA, Conventional, Non-QM, DSCR, and more options tailored to your specific needs.': 'FHA, Conventional, Non-QM, DSCR, and more options tailored to your specific needs.',
             
             // CTA Sections
-            'Find out if you qualify to buy or rent today—your dream home is closer than you think.': 'Find out if you qualify to buy or rent today—your dream home is closer than you think.',
+            'Find out if you qualify to buy or rent today, your dream home is closer than you think.': 'Find out if you qualify to buy or rent today, your dream home is closer than you think.',
             '👉 Check Your Eligibility Now': '👉 Check Your Eligibility Now',
             'Your Trusted Destination to Buy or Rent Your Dream Home': 'Your Trusted Destination to Buy or Rent Your Dream Home',
             '👉 Contact Us Today': '👉 Contact Us Today',
@@ -637,7 +637,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'FHA, Conventional, Non-QM, DSCR, and more options tailored to your specific needs.': 'FHA, Convencional, Non-QM, DSCR y más opciones adaptadas a tus necesidades específicas.',
             
             // CTA Sections
-            'Find out if you qualify to buy or rent today—your dream home is closer than you think.': 'Descubre si calificas para comprar o alquilar hoy—tu casa soñada está más cerca de lo que piensas.',
+            'Find out if you qualify to buy or rent today, your dream home is closer than you think.': 'Descubre si calificas para comprar o alquilar hoy, tu casa soñada está más cerca de lo que piensas.',
             '👉 Check Your Eligibility Now': '👉 Verifica tu Elegibilidad Ahora',
             'Whether you\'re<br>buying or renting, DestinationBuyRent.com is your trusted partner': 'Ya sea que estés comprando o alquilando, DestinationBuyRent.com es tu socio de confianza',
             'Your Trusted Destination to Buy or Rent Your Dream Home': 'Tu destino de confianza para comprar o alquilar la casa de tus sueños.',
