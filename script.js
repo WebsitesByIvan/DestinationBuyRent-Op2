@@ -502,6 +502,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'Start Your Journey Today': 'Start Your Journey Today',
             
             // Hero Section
+            'Whether you\'re<br>buying or renting, DestinationBuyRent.com is your trusted partner': 'Whether you\'re<br>buying or renting, DestinationBuyRent.com is your trusted partner',
             'Your Trusted Destination to Buy or Rent Your Dream Home': 'Your Trusted Destination to Buy or Rent Your Dream Home',
             'At DestinationBuyRent.com, we simplify the process of buying or renting. From credit guidance to closing the deal, we make sure your journey to a new home is smooth and stress-free.': 'At DestinationBuyRent.com, we simplify the process of buying or renting. From credit guidance to closing the deal, we make sure your journey to a new home is smooth and stress-free.',
             '👉 Start Your Journey Today': '👉 Start Your Journey Today',
@@ -521,12 +522,12 @@ document.addEventListener('DOMContentLoaded', function() {
             // CTA Sections
             'Find out if you qualify to buy or rent today—your dream home is closer than you think.': 'Find out if you qualify to buy or rent today—your dream home is closer than you think.',
             '👉 Check Your Eligibility Now': '👉 Check Your Eligibility Now',
-            'Whether you\'re buying or renting, DestinationBuyRent.com is your trusted partner.': 'Whether you\'re buying or renting, DestinationBuyRent.com is your trusted partner.',
+            'Your Trusted Destination to Buy or Rent Your Dream Home': 'Your Trusted Destination to Buy or Rent Your Dream Home',
             '👉 Contact Us Today': '👉 Contact Us Today',
             
             // Why Choose Us Section
             'Why Choose Us': 'Why Choose Us',
-            'Trust, expertise, and personalized support for your home journey': 'Trust, expertise, and personalized support for your home journey',
+            'Trust, expertise, and personalized support for your home journey with over 30 years of experience': 'Trust, expertise, and personalized support for your home journey with over 30 years of experience',
             'Key Advantages': 'Key Advantages',
             'Fast preparation and processing': 'Fast preparation and processing',
             'Step-by-step clarity throughout the process': 'Step-by-step clarity throughout the process',
@@ -536,7 +537,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'Jose L. Figueroa, NMLS #371526, Licensed Mortgage Loan Originator in Florida': 'Jose L. Figueroa, NMLS #371526, Licensed Mortgage Loan Originator in Florida',
             'FHA, Fannie Mae, Freddie Mac, VA, USDA, Non-Conforming programs': 'FHA, Fannie Mae, Freddie Mac, VA, USDA, Non-Conforming programs',
             'Member of national and local mortgage and real estate associations': 'Member of national and local mortgage and real estate associations',
-            'Trusted by thousands of first-time buyers & investors in South Florida': 'Trusted by thousands of first-time buyers & investors in South Florida',
+            'Trusted by thousands of first-time home buyers, renters & investors in South Florida': 'Trusted by thousands of first-time home buyers, renters & investors in South Florida',
             'Equal Housing Opportunity': 'Equal Housing Opportunity',
             'FHA': 'FHA',
             'NMLS': 'NMLS',
@@ -616,12 +617,12 @@ document.addEventListener('DOMContentLoaded', function() {
             'About': 'Nosotros',
             'Contact': 'Contacto',
             'Call us now': 'Llámanos ahora',
-            'Start Your Journey Today': 'Comienza tu Viaje Hoy',
+            'Start Your Journey Today': 'Empieza tu proceso hoy',
             
             // Hero Section
-            'Your Trusted Destination to Buy or Rent Your Dream Home': 'Tu Destino de Confianza para Comprar o Alquilar tu Casa Soñada',
+            'Whether you\'re<br>buying or renting, DestinationBuyRent.com is your trusted partner': 'Ya sea que estés comprando o alquilando, DestinationBuyRent.com es tu socio de confianza',
             'At DestinationBuyRent.com, we simplify the process of buying or renting. From credit guidance to closing the deal, we make sure your journey to a new home is smooth and stress-free.': 'En DestinationBuyRent.com, simplificamos el proceso de compra o alquiler. Desde orientación crediticia hasta cerrar el trato, nos aseguramos de que tu viaje hacia una nueva casa sea suave y sin estrés.',
-            '👉 Start Your Journey Today': '👉 Comienza tu Viaje Hoy',
+            '👉 Start Your Journey Today': '👉 Empieza tu proceso hoy',
             
             // Services Section
             'Our Main Services': 'Nuestros Servicios Principales',
@@ -638,12 +639,13 @@ document.addEventListener('DOMContentLoaded', function() {
             // CTA Sections
             'Find out if you qualify to buy or rent today—your dream home is closer than you think.': 'Descubre si calificas para comprar o alquilar hoy—tu casa soñada está más cerca de lo que piensas.',
             '👉 Check Your Eligibility Now': '👉 Verifica tu Elegibilidad Ahora',
-            'Whether you\'re buying or renting, DestinationBuyRent.com is your trusted partner.': 'Ya sea que estés comprando o alquilando, DestinationBuyRent.com es tu socio de confianza.',
+            'Whether you\'re<br>buying or renting, DestinationBuyRent.com is your trusted partner': 'Ya sea que estés comprando o alquilando, DestinationBuyRent.com es tu socio de confianza',
+            'Your Trusted Destination to Buy or Rent Your Dream Home': 'Tu destino de confianza para comprar o alquilar la casa de tus sueños.',
             '👉 Contact Us Today': '👉 Contáctanos Hoy',
             
             // Why Choose Us Section
             'Why Choose Us': 'Por Qué Elegirnos',
-            'Trust, expertise, and personalized support for your home journey': 'Confianza, experiencia y apoyo personalizado para tu viaje hacia el hogar',
+            'Trust, expertise, and personalized support for your home journey with over 30 years of experience': 'Confianza, experiencia y apoyo personalizado para tu viaje hacia el hogar con más de 30 años de experiencia',
             'Key Advantages': 'Ventajas Clave',
             'Fast preparation and processing': 'Preparación y procesamiento rápido',
             'Step-by-step clarity throughout the process': 'Claridad paso a paso durante todo el proceso',
@@ -653,7 +655,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'Jose L. Figueroa, NMLS #371526, Licensed Mortgage Loan Originator in Florida': 'Jose L. Figueroa, NMLS #371526, Agente hipotecario con licencia en Florida',
             'FHA, Fannie Mae, Freddie Mac, VA, USDA, Non-Conforming programs': 'FHA, Fannie Mae, Freddie Mac, VA, USDA, Préstamos no conformes',
             'Member of national and local mortgage and real estate associations': 'Miembro de asociaciones hipotecarias y de bienes raíces nacionales y locales',
-            'Trusted by thousands of first-time buyers & investors in South Florida': 'Confiado por miles de compradores primerizos e inversores en el Sur de Florida',
+            'Trusted by thousands of first-time home buyers, renters & investors in South Florida': 'Confiado por miles de compradores primerizos de casas, inquilinos e inversores en el Sur de Florida',
             'Equal Housing Opportunity': 'Igualdad de Oportunidad de Vivienda',
             'FHA': 'FHA',
             'NMLS': 'NMLS',
@@ -733,8 +735,8 @@ document.addEventListener('DOMContentLoaded', function() {
         elements.forEach(element => {
             if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
                 element.placeholder = translations[lang][element.getAttribute('data-en')] || element.placeholder;
-            } else if (element.classList.contains('modal-title')) {
-                // Special handling for modal title with HTML content
+            } else if (element.classList.contains('modal-title') || element.classList.contains('hero-title')) {
+                // Special handling for modal title and hero title with HTML content
                 element.innerHTML = element.getAttribute(`data-${lang}`);
             } else {
                 element.textContent = translations[lang][element.getAttribute('data-en')] || element.textContent;
