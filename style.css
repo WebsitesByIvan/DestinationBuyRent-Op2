@@ -244,6 +244,16 @@ p {
     z-index: 2;
 }
 
+.hero-text {
+    max-width: 100%;
+    overflow: visible;
+    word-wrap: break-word;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
 .hero-title {
     font-size: 3rem;
     color: #000000;
@@ -252,6 +262,9 @@ p {
     margin-top: 1rem;
     margin-bottom: 1.5rem;
     line-height: 1.1;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .hero-subtitle {
@@ -261,6 +274,9 @@ p {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
     margin-bottom: 2rem;
     line-height: 1.6;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .hero-image {
@@ -684,9 +700,9 @@ p {
 
 .footer-slogan {
     color: #f1f5f9;
-    font-size: 1rem;
-    font-weight: 500;
-    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 1rem 0 0 0;
     font-style: italic;
 }
 
@@ -726,7 +742,7 @@ p {
     border-top: 1px solid #334155;
     padding-top: 2rem;
     text-align: center;
-    color: #cbd5e1;
+    color: white;
 }
 
 /* Responsive Design */
@@ -772,15 +788,23 @@ p {
         grid-template-columns: 1fr;
         gap: 2rem;
         text-align: center;
+        padding: 0 0.25rem;
     }
     
     .hero-title {
-        font-size: 3rem;
+        font-size: 2.25rem;
         margin-top: 2rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        max-width: 100%;
+        line-height: 1.3;
     }
     
     .hero-subtitle {
         font-size: 1.1rem;
+        max-width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
     
     .hero::before {
@@ -817,13 +841,24 @@ p {
 }
 
 @media (max-width: 480px) {
+    .hero {
+        padding: 80px 0 40px;
+    }
+    
+    .hero-content {
+        padding: 0 0.125rem;
+    }
+    
     .hero-title {
-        font-size: 2.5rem;
-        margin-top: 2.5rem;
+        font-size: 1.75rem;
+        margin-top: 1.5rem;
+        line-height: 1.2;
     }
     
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        max-width: 100%;
+        line-height: 1.5;
     }
     
     .hero-carousel img {

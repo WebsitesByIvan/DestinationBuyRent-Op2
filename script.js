@@ -505,7 +505,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'Whether you\'re<br>buying or renting, DestinationBuyRent.com is your trusted partner': 'Whether you\'re<br>buying or renting, DestinationBuyRent.com is your trusted partner',
             'Your Trusted Destination to Buy or Rent Your Dream Home': 'Your Trusted Destination to Buy or Rent Your Dream Home',
             'At DestinationBuyRent.com, we simplify the process of buying or renting. From credit guidance to closing the deal, we make sure your journey to a new home is smooth and stress-free.': 'At DestinationBuyRent.com, we simplify the process of buying or renting. From credit guidance to closing the deal, we make sure your journey to a new home is smooth and stress-free.',
-            '👉 Start Your Journey Today': '👉 Start Your Journey Today',
+            'Start Your Journey Today': 'Start Your Journey Today',
             
             // Services Section
             'Our Main Services': 'Our Main Services',
@@ -521,9 +521,9 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // CTA Sections
             'Find out if you qualify to buy or rent today, your dream home is closer than you think.': 'Find out if you qualify to buy or rent today, your dream home is closer than you think.',
-            '👉 Check Your Eligibility Now': '👉 Check Your Eligibility Now',
+            'Check Your Eligibility Now': 'Check Your Eligibility Now',
             'Your Trusted Destination to Buy or Rent Your Dream Home': 'Your Trusted Destination to Buy or Rent Your Dream Home',
-            '👉 Contact Us Today': '👉 Contact Us Today',
+            'Contact Us Today': 'Contact Us Today',
             
             // Why Choose Us Section
             'Why Choose Us': 'Why Choose Us',
@@ -576,6 +576,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'Terms of Service': 'Terms of Service',
             'Follow Us': 'Follow Us',
             'All rights reserved.': 'All rights reserved.',
+            'Till you get your keys!': 'Till you get your keys!',
             
             // Modal Form
             'Start Your Journey<br>Apply Today': 'Start Your Journey<br>Apply Today',
@@ -622,7 +623,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // Hero Section
             'Whether you\'re<br>buying or renting, DestinationBuyRent.com is your trusted partner': 'Ya sea que estés comprando o alquilando, DestinationBuyRent.com es tu socio de confianza',
             'At DestinationBuyRent.com, we simplify the process of buying or renting. From credit guidance to closing the deal, we make sure your journey to a new home is smooth and stress-free.': 'En DestinationBuyRent.com, simplificamos el proceso de compra o alquiler. Desde orientación crediticia hasta cerrar el trato, nos aseguramos de que tu viaje hacia una nueva casa sea suave y sin estrés.',
-            '👉 Start Your Journey Today': '👉 Empieza tu proceso hoy',
+            'Start Your Journey Today': 'Empieza tu proceso hoy',
             
             // Services Section
             'Our Main Services': 'Nuestros Servicios Principales',
@@ -638,10 +639,10 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // CTA Sections
             'Find out if you qualify to buy or rent today, your dream home is closer than you think.': 'Descubre si calificas para comprar o alquilar hoy, tu casa soñada está más cerca de lo que piensas.',
-            '👉 Check Your Eligibility Now': '👉 Verifica tu Elegibilidad Ahora',
+            'Check Your Eligibility Now': 'Verifica tu Elegibilidad Ahora',
             'Whether you\'re<br>buying or renting, DestinationBuyRent.com is your trusted partner': 'Ya sea que estés comprando o alquilando, DestinationBuyRent.com es tu socio de confianza',
             'Your Trusted Destination to Buy or Rent Your Dream Home': 'Tu destino de confianza para comprar o alquilar la casa de tus sueños.',
-            '👉 Contact Us Today': '👉 Contáctanos Hoy',
+            'Contact Us Today': 'Contáctanos Hoy',
             
             // Why Choose Us Section
             'Why Choose Us': 'Por Qué Elegirnos',
@@ -694,6 +695,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'Terms of Service': 'Términos de Servicio',
             'Follow Us': 'Síguenos',
             'All rights reserved.': 'Todos los derechos reservados.',
+            'Till you get your keys!': '¡Hasta que tengas tus llaves!',
             
             // Modal Form
             'Start Your Journey<br>Apply Today': 'Comienza tu Viaje<br>Aplica Hoy',
